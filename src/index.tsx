@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
+
 import App from './App';
+import { TodoList } from './stores';
+import { StoreProvider } from './context/StoreContext';
 import reportWebVitals from './reportWebVitals';
 
+const todoList = new TodoList([
+	'Should Starting Writing in React',
+	'Should Learn MobX',
+	'Should Watch Once Piece :)'
+]);
+
 ReactDOM.render(
-	<React.StrictMode>
+	<StoreProvider value={todoList}>
 		<App />
-	</React.StrictMode>,
+	</StoreProvider>,
 	document.getElementById('root')
 );
 
