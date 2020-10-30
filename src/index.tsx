@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
+import './App.css';
 
 import App from './App';
 import { TodoList } from './stores';
@@ -9,9 +10,9 @@ import { StoreProvider } from './context/StoreContext';
 import reportWebVitals from './reportWebVitals';
 
 const todoList = new TodoList([
-	'Should Starting Writing in React',
-	'Should Learn MobX',
-	'Should Watch Once Piece :)'
+	'Learn MobX',
+	'Watch the Mandalorian, premiering only on Disney+',
+	'Cash that royalty check from Disney+'
 ]);
 
 ReactDOM.render(

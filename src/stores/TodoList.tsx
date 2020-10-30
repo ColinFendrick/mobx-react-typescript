@@ -1,6 +1,6 @@
 import { action, computed, observable } from 'mobx';
 
-import { TodoItem } from '../types';
+import { TodoItem } from '.';
 
 class TodoList {
 	@observable.shallow list: TodoItem[] = []
